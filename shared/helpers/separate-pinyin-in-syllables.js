@@ -6,11 +6,11 @@ function separate(pinyin) {
   return (
     pinyin
       .replace(new RegExp(`([${vowels}])([^${vowels}nr])`, 'gi'), '$1 $2') // This line does most of the work
-      .replace(new RegExp('(w)([csz]h)', 'i'), '$1 $2') // double-consonant initials
+      .replace(new RegExp('(\w)([csz]h)', 'i'), '$1 $2') // double-consonant initials
       .replace(new RegExp(`(n)([^${vowels}vg])`, 'i'), '$1 $2') // cleans up most n compounds
       .replace(
         new RegExp(
-          '([' + vowels + 'v])([^' + vowels + 'ws])([' + vowels + 'v])',
+          '([' + vowels + 'v])([^' + vowels + '\w\s])([' + vowels + 'v])',
           'i',
         ),
         '$1 $2$3',
