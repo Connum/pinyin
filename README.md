@@ -1,3 +1,5 @@
+** This fork is used for my npm package `pinyin-separate`: https://github.com/Connum/npm-pinyin-separate/
+
 # Pinyin Editor
 A simple pinyin editor made in node.js
 
