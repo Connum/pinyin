@@ -1,7 +1,7 @@
 // @ts-check
 
-const vowels = 'aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜvv̄v́v̆v̀';
-const tones = 'āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜv̄v́v̆v̀';
+const vowels = 'aāáǎăàeēéěĕèiīíǐĭìoōóǒŏòuūúǔŭùüǖǘǚǚü̆ǜvv̄v́v̆v̌v̀';
+const tones = 'āáǎăàēéěĕèīíǐĭìōóǒŏòūúǔŭùǖǘǚǚü̆ǜv̄v́v̆v̌v̀';
 function separate(pinyin) {
   return (
     pinyin
