@@ -20,7 +20,7 @@ function separate(pinyin) {
         '$1$2 $3$4',
       ) // assumes correct Pinyin, i.e. changan = chan + gan
       .replace(new RegExp('([gr])([^' + vowels + '])', 'i'), '$1 $2') // fixes -ng and -r finals not followed by vowels
-      //.replace(new RegExp('([^e\w\s])(r)'), '$1 $2'); // r an initial, except in er
+      .replace(new RegExp('([^eēéěĕè\\w\\s])(r)'), '$1 $2') // r an initial, except in er
       .replace(/\s{2,}/g, ' ') // remove double-spaces
   );
 }
